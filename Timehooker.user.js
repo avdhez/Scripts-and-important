@@ -93,7 +93,7 @@
 
     speeds.forEach(spd => {
       const item = document.createElement('div');
-      item.textContent = ${spd}×;
+      item.textContent = `${spd}×`; // Fixed: added backticks for template literal
       Object.assign(item.style, {
         color: '#fff',
         fontSize: '15px',
